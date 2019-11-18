@@ -42,7 +42,7 @@ class CashRegister
   def void_last_transaction
    if @items==0
      return @total=0
-   else 
+   else
      @total= @total - item
    end
   end
