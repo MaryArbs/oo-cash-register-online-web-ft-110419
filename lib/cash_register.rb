@@ -4,7 +4,7 @@ class CashRegister
 
   attr_accessor :total, :discount, :items, :void_last_transaction, :price
 
-  def initialize (discount=nil)
+  def initialize (discount=0)
     @total=0
     @discount=discount
     @void_last_transaction=void_last_transaction
