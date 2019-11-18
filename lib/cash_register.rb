@@ -14,8 +14,8 @@ class CashRegister
 
   def add_item (title, price, quantity=1)
     @total += price * quantity
-     quantity.times do
-      @items << title
+    quantity.times do
+    @items << title
   end
     #adding an item to the instance variable @item array
     # @items << title
@@ -40,7 +40,7 @@ class CashRegister
   end
 
   def void_last_transaction
-
+   @void_last_transaction-= item 
   end
 
 
